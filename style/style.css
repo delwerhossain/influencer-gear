@@ -142,3 +142,32 @@ a:link {
     row-gap: 20px;
     column-gap: 20px;
 }
+
+@media screen and (max-width: 576px) {
+    .menu-container{
+        flex-direction: column;
+    }
+    .banner-part2{
+        width: 100%;
+    }
+    .banner-part2 img{
+        width: 100%;
+    }
+    .banner{
+        flex-direction: column-reverse;
+        row-gap: 100px;
+    }
+    .brand{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 100px);
+    }
+    .coll-full-part{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9,1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
